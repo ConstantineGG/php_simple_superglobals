@@ -2,7 +2,7 @@
 
 This library contains a set of functions to simplify and quicken the process of receiving $_SESSION, $_GET and $_POST variables in your PHP page. We have 6 functions for each super global, (3 for receiving *integer* and 3 for receiving *varchar* variables) making it a total of 18 easy to remember functions.
 
-In each case, we examine whether the variable is isset() or empty() and **what each function does with the outcomes, is explained by its name**.
+In each case, we examine whether the variable isset() or empty() and **what each function does with the outcomes, is explained by the function name**.
 - "force" means we continue only if the var is set and not empty
 - "empty" means we continue if the var is empty but it must be set
 - "allow" means we continue no matter what and give the var the value of ""

@@ -1,6 +1,6 @@
 # php_simple_superglobals
 
-This library contains a set of functions to simplify and quicken the process of receiving SESSION, GET and POSTA set of functions to simplify the task of safely recieving SESSION, GET and POST variable in your PHP page. We have 6 functions for each super global, (3 for receiving ingegers and 3 for receiving varchar variables) making it a total of 18 easy to remember functions.
+This library contains a set of functions to simplify and quicken the process of receiving $_SESSION, $_GET and $_POST variables in your PHP page. We have 6 functions for each super global, (3 for receiving *integer* and 3 for receiving *varchar* variables) making it a total of 18 easy to remember functions.
 
 In each case, we examine whether the variable is isset() or empty() and **what each function does with the outcomes, is explained by its name**.
 - "force" means we continue only if the var is set and not empty

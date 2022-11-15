@@ -10,8 +10,8 @@ In each case, we examine whether the variable isset() or empty() and **what each
 Additionally, for integer variables we also filter them to remove any non integer characters to protect ourselves against <a href="https://owasp.org/www-community/attacks/xss/">XSS<a/>.
 To achieve this, we use: <code>$safe_int = filter_var($unsafe_int, FILTER_SANITIZE_NUMBER_INT);</code>
 
-Make sure to protect yourself from XSS when it comes to varchar variables too.
-- For html:  <code>$safe_varchar = htmlspecialchars($unsafe_varchar, ENT_QUOTES | ENT_HTML5);</code>
+In your own implementation, make sure to protect yourself from XSS when it comes to varchar variables too.
+- For HTML:  <code>$safe_varchar = htmlspecialchars($unsafe_varchar, ENT_QUOTES | ENT_HTML5);</code>
 - For MySQL: <code>$safe_varchar = $mysqli_object->real_escape_string($unsafe_varchar);</code>
 
 Enjoy!

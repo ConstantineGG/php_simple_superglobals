@@ -5,7 +5,7 @@ This library contains a set of functions to simplify and quicken the process of 
 In each case, we examine whether the variable isset() or empty() and **what each function does with the outcomes, is explained by the function name**.
 - "force" means we continue only if the var is set and not empty
 - "empty" means we continue if the var is empty but it must be set
-- "allow" means we continue no matter what and give the var the value of ""
+- "allow" means we continue no matter what and give the var the value of an empty string: <code>""</code>
 
 Additionally, for integer variables we also filter them to remove any non integer characters to protect ourselves against <a href="https://owasp.org/www-community/attacks/xss/">XSS<a/>.
 To achieve this, we use: <code>$safe_int = filter_var($unsafe_int, FILTER_SANITIZE_NUMBER_INT);</code>

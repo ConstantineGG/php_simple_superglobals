@@ -113,7 +113,7 @@ function session_varchar_empty($filthy) {
 
 function session_varchar_allow($filthy) {
   if ( !isset($_SESSION["$filthy"]) ) {
-    $session_var = $_SESSION["$filthy"];
+    $session_var = "";
   }
   elseif ( empty($_SESSION["$filthy"]) ) {
     $session_var = "";
